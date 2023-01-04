@@ -4,14 +4,15 @@ import java.util.Random;
 
 public class EmployeeWages {
 	/*
-	 * Add Part time Employee & Wage by assuming part time hours is 8
+	 * Calculating Wages for a Month by assuming 20 working day per month
 	 */
 	public static void main(String[] args) {
+		
 		System.out.println("Welcome to Employee Wage Java Program");
 
-		Random random = new Random(); // creation of random object
+		Random random = new Random(); // random object
 
-		// initialization
+		// Initialization
 		int wagePerHrs = 20;
 
 		int fullDayHrs = 8;
@@ -19,30 +20,35 @@ public class EmployeeWages {
 		int halfDayHrs = 4;
 
 		int salary = 0;
-		int randomNum = random.nextInt(3);
 
-		switch (randomNum) {
+		int monthlysalary = 0;
 
-		case 0:
-			System.out.println("Employee is Absent");
-			System.out.println("Monthly Salary will be: "+salary);
-			break;
-		case 1:
-			System.out.println("Employee is Present");
-			salary = wagePerHrs * fullDayHrs;
-			System.out.println("Monthly salary for Full Day: " +salary);
-		
-			break;
-		case 2:
-			System.out.println("Employee is Present");
-			salary = wagePerHrs * halfDayHrs;
-			System.out.println("Monthly Salary for Half Day: "+salary);
+		int workingDaysPerMonth = 20;
+
+		/*
+		 * using a loop to provide the days to work
+		 * 0,1,2 random number
+		 */
+		for (int i = 1; i <= workingDaysPerMonth; i++) {
+			int randomNum = random.nextInt(3);
 			
-			break;
+			switch (randomNum) {
 
-		}
-		
+			case 0:
+				System.out.println("Employee is Absent");
+				System.out.println("Monthly Salary will be: "+salary);
+				break;
+			case 1:
+				System.out.println("Employee is Present");
+				salary = wagePerHrs * fullDayHrs;
+				System.out.println("Monthly salary for Full Day: " +salary);
+			
+				break;
+			case 2:
+				System.out.println("Employee is Present");
+				salary = wagePerHrs * halfDayHrs;
+				System.out.println("Monthly Salary for Half Day: "+salary);
+				
+				break;
 
-	}
-
-}
+			}}}}
