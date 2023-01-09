@@ -12,11 +12,11 @@ public class EmployeeWages {
 		Random random = new Random(); // creation of random object
 
 		// initialization
-		int wagePerHrs = 20;
+		int WAGE_PER_HOUR = 20
 
-		int fullDayHrs = 8;
+		int Full_Day_Hrs = 8;
 
-		int halfDayHrs = 4;
+		int Half_Day_Hrs = 4;
 
 		int salary = 0;
 		int randomNum = random.nextInt(3);
@@ -29,13 +29,13 @@ public class EmployeeWages {
 			break;
 		case 1:
 			System.out.println("Employee is Present");
-			salary = wagePerHrs * fullDayHrs;
+			salary = WAGE_PER_HOUR * Full_Day_Hrs;
 			System.out.println("Monthly salary for Full Day: " +salary);
 		
 			break;
 		case 2:
 			System.out.println("Employee is Present");
-			salary = wagePerHrs * halfDayHrs;
+			salary = WAGE_PER_HOUR * Full_Day_Hrs;
 			System.out.println("Monthly Salary for Half Day: "+salary);
 			
 			break;
