@@ -12,11 +12,11 @@ public class EmployeeWages {
 
 		Random random = new Random(); // using random for storing values.
 
-		int wagePerHrs = 20;
+		int WAGE_PER_HOUR = 20
 
-		int fullDayHrs = 8;
+		int Full_Day_Hrs = 8;
 
-		int halfDayHrs = 4;
+		int Half_Day_Hrs = 4;
 
 		int salary = 0; // will give 0,1,2 random number
 
@@ -24,9 +24,9 @@ public class EmployeeWages {
 
 		if (randomNum == 1) {
 			System.out.println("Employee is Present");
-			salary = wagePerHrs * fullDayHrs;
+			salary = WAGE_PER_HOUR * Full_Day_Hrs;
 		} else if (randomNum == 2) {
-			salary = wagePerHrs * halfDayHrs;
+			salary = WAGE_PER_HOUR * Full_Day_Hrs;
 			System.out.println("Employee is Present for half day");
 
 		} else
